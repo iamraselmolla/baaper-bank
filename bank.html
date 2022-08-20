@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="3.1.8.js"></script>
+
+
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl text-center mb-5">Welcome to bapper Bank</h1>
+    </header>
+    <main>
+        <section class="mt-12"> 
+           <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text--white">
+            <div class="bg-green-400 p-8 rounded-lg text-white">
+                <h4 class="text-2xl">
+                    Deposit
+                </h4>
+                <h2 class="text-5xl">$<span class="depositAmount">00</span></h2>
+            </div>
+            <div class="bg-yellow-500 p-8 rounded-lg text-white">
+                <h4 class="text-2xl">
+                    Withdraw
+                </h4>
+                <h2 class="text-5xl">$<span class="withdrwAmount">00</span></h2>
+            </div>
+            <div class="bg-violet-500 p-8 rounded-lg text-white">
+                <h4 class="text-2xl">
+                    Balance
+                </h4>
+                <h2 class="text-5xl">$<span class="balance">1240</span></h2>
+            </div>
+           </div>
+           <div class="grid grid-cols-2 mt-7 gap-4 w-9/12 mx-auto text--white">
+            <div class="bg-yellow-300 p-8 rounded-lg">
+                <form id="form" action="">
+                    <h4 class="text-white text-3xl mb-4">Please Deposit</h4>
+                    <input id="wantToDeposit" class="block w-11/12 mb-2 px-3" type="number" placeholder="amount">
+                    <button type="button" id="btnDeposit" class="submit bg-lime-500 rounded-lg px-8 py-3 text-white font-medium">Deposit</button>
+                </form>
+            </div>
+            <div class="bg-indigo-500 p-8 rounded-lg">
+                <form id="form" action="">
+
+                    <h4 class="text-white text-3xl mb-4">Please Withdraw</h4>
+
+                    <input id="wantToWithdraw" class="block w-11/12 mb-2 px-3" type="email" placeholder="$ Amount that you want to withdraw">
+                    <button type="button" id="btnWithdraw" class="submit bg-lime-500 rounded-lg px-8 py-3 text-white font-medium">Withdraw</button>
+                </form>
+            </div>
+           </div>
+        </section>
+    </main>
+   <script src="deposit.js">
+         
+   </script>
+</body>
+</html>
